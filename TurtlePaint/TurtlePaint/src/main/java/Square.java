@@ -15,19 +15,24 @@ public class Square extends Shape {
 
         this.getTurtle().setPenWidth(7);
        this.getTurtle().setColor(Color.black);
+        this.getTurtle().penUp();
+        this.getTurtle().goTo(-150,0);
+        this.getTurtle().setHeading(90);
+        this.getTurtle().penDown();
+
+        this.getTurtle().turnRight(180);
+        this.getTurtle().forward(200);
+
+        // turtle.penUp();
+        this.getTurtle().turnRight(90);
+        this.getTurtle().forward(200);
 
         this.getTurtle().turnRight(90);
         this.getTurtle().forward(200);
 
-        // turtle.penUp();
-        this.getTurtle().turnLeft(90);
+        this.getTurtle().turnRight(90);
         this.getTurtle().forward(200);
-
-        this.getTurtle().turnLeft(90);
-        this.getTurtle().forward(200);
-
-        this.getTurtle().turnLeft(90);
-        this.getTurtle().forward(200);
+        this.getTurtle().penUp();
     }
 
     public void paint(double x, double y){

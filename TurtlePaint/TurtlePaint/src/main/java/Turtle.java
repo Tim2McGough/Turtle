@@ -374,7 +374,7 @@ public class Turtle {
      * Find out what direction the Turtle is facing
      * @return angle in degrees; 0 is right, 90 is up, etc
      */
-    public double getHeading() {
+    public double getHeading(int i) {
         return theta*180/Math.PI;
     }
 
